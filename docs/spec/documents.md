@@ -229,7 +229,7 @@ just bump `updated`.
 
 ### 4.6 A worked example
 
-[[0001-a-session-is-a-signed-cookie]] is the one this template ships with. It is invented and it
+`docs/decisions/0001-a-session-is-a-signed-cookie.md` is the one this template ships with. It is invented and it
 is meant to be deleted, but read it before writing your first real one, because four things in it
 are what the shape is for:
 
@@ -294,7 +294,9 @@ A sprint is a fortnight, and it is fully specified in
 In summary, so that this table is complete: `docs/sprints/`, named after its title, `starts` and
 `ends` as plain `YYYY-MM-DD`, no state field because whether a sprint is running is a question
 about today, and a body that is the goal in more than one line, what was cut and why, and the
-retrospective. [[Sprint 1]] is the worked example this template ships with.
+retrospective. `docs/sprints/Sprint 1.md` is the worked example this template ships with. It is cited by path
+rather than linked, because a document the reader is told to delete is a wikilink waiting to
+be dead.
 
 No required sections, and one prohibition that matters more than a required section would: **a
 sprint page never links a task**, in a list or in prose. Its contents are its backlinks. In prose
