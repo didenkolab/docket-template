@@ -4,6 +4,7 @@ type: sprint
 starts: 2026-01-05
 ends: 2026-01-16
 updated: 2026-01-16
+example: true
 ---
 
 # Sprint 1

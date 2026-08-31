@@ -4,6 +4,7 @@ type: decision
 status: accepted
 date: 2026-01-08
 updated: 2026-08-31
+example: true
 ---
 
 # ADR-0001 — A session is a signed cookie
