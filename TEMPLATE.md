@@ -37,5 +37,17 @@ The one rule: the result has to be a vault. `docket init` validates it after cop
 template that has drifted into something docket cannot read fails at `init` with a clear reason
 rather than confusing somebody later.
 
-`PROJ` is a placeholder project so that this repository is itself a valid vault you can open in
-Obsidian and look at. `init` replaces it with the real key.
+## PROJ
+
+`PROJ` is a placeholder project, so that this repository is itself a valid vault you can open in
+Obsidian and look at — and so that the prose has a key to speak about. `init` replaces the token
+`PROJ` with the real key everywhere it stands as a word, which is why `AGENTS.md` here can say
+`PROJ-12` and a new project reads `ACME-12`. `PROJECT-NUMBER` is left alone: the match is on
+word boundaries.
+
+The vault name works the same way, and `docket.yaml` does not: it is rewritten from a parsed
+value rather than substituted, because replacing text inside YAML is how a template quietly
+produces a vault that will not parse.
+
+So: write the prose against `PROJ`, and keep the placeholder project empty. A task left in it
+is treated as content and comes along.
