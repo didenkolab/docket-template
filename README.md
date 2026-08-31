@@ -11,7 +11,7 @@ frontmatter, and git is the history.
 |---|---|
 | `docket.yaml` | The projects this vault holds and the vocabulary they share |
 | `PROJ/` | One folder per project. `PROJ-12 Its title.md` is the task `PROJ-12` |
-| `docs/` | Knowledge base — a free tree of wiki pages |
+| `docs/` | Knowledge base — pages, decisions, specs and sprints. `docs/spec/documents.md` says what each one is |
 | `boards/` | Obsidian Bases views: board, backlog, my tasks |
 | `templates/` | Templates for a new task and a new page |
 | `AGENTS.md` | How an agent works in this vault |

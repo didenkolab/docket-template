@@ -21,6 +21,8 @@ docket init --key ACME --template git@example.com:us/our-template.git
 | `CLAUDE.md` | A pointer to `AGENTS.md`, so Claude Code reads the same file. |
 | `boards/` | Obsidian Bases views. Regenerated from `docket.yaml` by `docket check --fix`, so editing them here is pointless — change the vocabulary instead. |
 | `docs/index.md` | The front page of the knowledge base. |
+| `docs/spec/documents.md` | What a page under `docs/` is: the five kinds, where each lives, and the four sections a decision has. Normative, and yours to amend — it says how. |
+| `docs/decisions/` | One worked decision, which is the only kind of page with a required shape. Written to be good rather than to be a form. Delete it or write over it. |
 | `docs/sprints/` | One worked sprint page, which is the whole of what a sprint is here: two dates, a goal, a retrospective, and no state. Delete it or write over it. |
 | `templates/` | Templates for a new task and a new page. |
 | `.obsidian/` | Enough settings that opening the folder in Obsidian works without configuring anything. |

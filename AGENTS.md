@@ -134,8 +134,33 @@ tasks to a sprint page; its contents are its backlinks.
 
 ## Writing documentation
 
-Pages go anywhere under `docs/`, in whatever tree makes sense. There is no schema — it is a
-wiki. Connect pages with `[[wikilinks]]`, so the graph and backlinks stay useful.
+Every page under `docs/` carries `title`, `type` and `updated`, and `type` says where it lives:
+
+| `type` | What it is | Where |
+|---|---|---|
+| `decision` | A choice that was hard to make and is expensive to revisit | `docs/decisions/NNNN-kebab-title.md` |
+| `design` | How something works and why it is that way | `docs/design/` |
+| `spec` | What must be true; the thing `docket check` enforces | `docs/spec/`, with `status: normative` |
+| `sprint` | A fortnight: the goal, what was cut, the retrospective | `docs/sprints/`, with `starts` and `ends` |
+| `page` | Everything else | anywhere under `docs/` |
+
+`updated` is a plain `YYYY-MM-DD` and you set it on every change.
+
+**A decision is the only kind with a required shape**, and it is `## Context`, `## Decision`,
+`## What this costs`, `## Alternatives considered`, spelled that way and in that order. It also
+carries `status: proposed | accepted | superseded` and `date`. Numbers run from `0001` in the
+order the decisions were taken and are never reused or renumbered, because the number is what
+gets cited. The other four kinds have no required sections: they are arguments, and a required
+shape flattens an argument.
+
+Write a decision only when there was a real fork — alternatives somebody would have argued for,
+and a cost that was accepted. Explaining how a mechanism works is a design page, even when it
+argues hard for itself. Getting this wrong in the other direction is worse: a fork recorded as a
+design page never writes its alternatives down, and the argument gets had again.
+
+Everything else — what each section must contain, how a page is named, superseding, and what
+`docket check` can and cannot tell you — is in [[documents]], and
+[[0001-a-session-is-a-signed-cookie]] is a worked decision to read before writing one.
 
 **Do not write a page whose purpose is to list other pages.** No index of labels, no "see all",
 no front page linking every epic. A link is a relationship, not a route: a list connects
@@ -145,7 +170,8 @@ the two most connected notes in it and accounted for eighteen per cent of every 
 
 Finding a page is what the file explorer, the tag pane, the quick switcher and backlinks are
 for. None of them draws an edge. A front page may link the three or four pages somebody must
-read first — that is a relationship. It may not link everything.
+read first — that is a relationship. It may not link everything. A page nothing links to is a
+page nobody finds, and `docket graph` reports it.
 
 ## Labels and tags: which to use
 
