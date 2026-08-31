@@ -16,11 +16,12 @@ docket init --key ACME --template git@example.com:us/our-template.git
 
 | Path | What a new project gets |
 |---|---|
-| `docket.yaml` | The vocabulary: statuses, types with levels, priorities. `init` replaces the project key and name; everything else is yours to set here. |
+| `docket.yaml` | The vocabulary: statuses, types with levels, priorities, and the unit and scale an estimate is in. `init` replaces the project key and name; everything else is yours to set here. |
 | `AGENTS.md` | How an agent works in the vault. The normative rules an agent must follow when it edits files directly rather than going through the board. |
 | `CLAUDE.md` | A pointer to `AGENTS.md`, so Claude Code reads the same file. |
 | `boards/` | Obsidian Bases views. Regenerated from `docket.yaml` by `docket check --fix`, so editing them here is pointless — change the vocabulary instead. |
 | `docs/index.md` | The front page of the knowledge base. |
+| `docs/sprints/` | One worked sprint page, which is the whole of what a sprint is here: two dates, a goal, a retrospective, and no state. Delete it or write over it. |
 | `templates/` | Templates for a new task and a new page. |
 | `.obsidian/` | Enough settings that opening the folder in Obsidian works without configuring anything. |
 

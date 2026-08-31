@@ -32,3 +32,10 @@ priorities:
   - normal
   - high
   - urgent
+# What an estimate is counted in. unit is free text: a team that counts
+# hours says hours. scale is the values offered and accepted — remove it
+# to allow any number, remove the whole block to not estimate at all.
+# A task with children carries no estimate; it is the sum of theirs.
+estimates:
+  unit: points
+  scale: [1, 2, 3, 5, 8, 13]
