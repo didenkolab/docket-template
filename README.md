@@ -1,6 +1,6 @@
 # A new project
 
-An [docket](https://github.com/vadymdidenkolab/docket) vault: a task board and a knowledge base
+A [docket](https://github.com/vadymdidenkolab/docket) vault: a task board and a knowledge base
 kept as Markdown files in git.
 
 Clone it, open the folder in Obsidian, and you get a board, a backlog and a wiki. There is
