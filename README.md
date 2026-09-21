@@ -1,6 +1,6 @@
 # A new project
 
-A [docket](https://github.com/vadymdidenkolab/docket) vault: a task board and a knowledge base
+A [docket](https://github.com/didenkolab/docket) vault: a task board and a knowledge base
 kept as Markdown files in git.
 
 Clone it, open the folder in Obsidian, and you get a board, a backlog and a wiki. There is
@@ -19,7 +19,7 @@ open -a Obsidian .     # macOS. Elsewhere: Obsidian → Open folder as vault
 The left pane is the file tree: the project folder is the work, `docs/` is the wiki. Open
 `boards/board`, `boards/backlog`, and the graph view for how it all connects.
 
-Or a board in a browser, with the [docket](https://github.com/vadymdidenkolab/docket) binary:
+Or a board in a browser, with the [docket](https://github.com/didenkolab/docket) binary:
 
 ```bash
 docket serve --auth none --author "Your Name <you@example.com>"
@@ -36,7 +36,7 @@ editor reads them. Nothing here needs Go, Python or Docker.
 ## Install
 
 Nothing to install — this is a vault, not a program. The tool that reads it is a separate,
-optional download; see [docket](https://github.com/vadymdidenkolab/docket).
+optional download; see [docket](https://github.com/didenkolab/docket).
 
 ## Usage
 
@@ -68,7 +68,7 @@ a hub joining everything that carries it. That is why the graph is worth opening
 Obsidian's backlinks pane answers questions no field was added for.
 
 The format is specified in
-[docket-board](https://github.com/vadymdidenkolab/docket-board/blob/main/docs/spec/vault-format.md),
+[docket-board](https://github.com/didenkolab/docket-board/blob/main/docs/spec/vault-format.md),
 and `docs/spec/documents.md` here says what a page under `docs/` is.
 
 ### What `docket init` does with this
@@ -83,7 +83,7 @@ docket init --key ACME --template git@example.com:us/our-template.git   # or you
 ```
 
 The default template is
-[docket-template](https://github.com/vadymdidenkolab/docket-template), a repository rather than
+[docket-template](https://github.com/didenkolab/docket-template), a repository rather than
 something inside the binary so that a team can make the scaffold its own — its own `AGENTS.md`,
 its own conventions, its own CI — without waiting for a release. Anything added there comes
 along into every project made afterwards, and `TEMPLATE.md` in that repository says what is in
@@ -100,13 +100,13 @@ it, what is removed on the way out, and how the placeholder project is replaced.
 | `templates/` | Templates for a new task and a new page |
 | `AGENTS.md` | How an agent works in this vault |
 
-The family: [`docket`](https://github.com/vadymdidenkolab/docket) is the tool;
-[`docket-apps`](https://github.com/vadymdidenkolab/docket-apps) is twelve packs of vocabulary and
-files a vault can take on; [`docket-board`](https://github.com/vadymdidenkolab/docket-board) holds
+The family: [`docket`](https://github.com/didenkolab/docket) is the tool;
+[`docket-apps`](https://github.com/didenkolab/docket-apps) is twelve packs of vocabulary and
+files a vault can take on; [`docket-board`](https://github.com/didenkolab/docket-board) holds
 the specification, the decisions and the project's own board;
-[`docket-demo`](https://github.com/vadymdidenkolab/docket-demo) is a small vault to open and look
+[`docket-demo`](https://github.com/didenkolab/docket-demo) is a small vault to open and look
 at; `docket-showcase` is an invented company's vault, with
-[`northlight`](https://github.com/vadymdidenkolab/northlight) its code beside it. Only
+[`northlight`](https://github.com/didenkolab/northlight) its code beside it. Only
 `docket-template` is public today; the rest need access.
 
 ## Contributing
